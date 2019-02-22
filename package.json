@@ -68,5 +68,13 @@
   "bugs": {
     "url": "https://github.com/bennyzanuar/exercise/issues"
   },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>src/setupTests.js"
+    ]
+  },
   "homepage": "https://github.com/bennyzanuar/exercise#readme"
 }

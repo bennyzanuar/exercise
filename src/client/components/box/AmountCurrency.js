@@ -31,12 +31,10 @@ class AmountCurrency extends Component{
                         <Input
                             placeholder="Insert Value"
                             className={``}
-                            label="Insert Value"
                             defaultValue={amount}
                             onChange={ () => {this.onChangeAmount(event)} }
                             inputProps={{
-                                style: { textAlign: "right" },
-                                'aria-label': 'myAriaLabel'
+                                style: { textAlign: "right" }
                             }}
                         />
                     </div>

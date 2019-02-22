@@ -38,7 +38,7 @@ exports[`<ListCurrency /> should render list with props 1`] = `
         <WithStyles(Typography)
           component="p"
         >
-          1 USD = IDR 14102.0011
+          1 USD = IDR 14,102.0011
         </WithStyles(Typography)>
       </div>
       <WithStyles(ListItemSecondaryAction)>

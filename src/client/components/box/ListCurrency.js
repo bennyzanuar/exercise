@@ -44,7 +44,7 @@ class ListCurrency extends Component {
                                         <strong>{currencyCountry[key]}</strong>
                                     </Typography>
                                     <Typography component="p">
-                                        {`1 USD = ${key} ${formatNumber((rates[key]).toFixed(4))}`}
+                                        {`1 USD = ${key} ${formatNumber((rates[key] * 1).toFixed(4))}`}
                                     </Typography>
                                 </div>
                                 <ListItemSecondaryAction>

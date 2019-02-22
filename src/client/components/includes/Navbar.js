@@ -8,11 +8,6 @@ import Typography from '@material-ui/core/Typography'
 const styles = {
     header: {
         backgroundColor: '#F66946'
-    },
-    title:{
-        color: '#000000',
-        fontSize: 16,
-        fontWeight: 800
     }
 }
 
@@ -22,7 +17,7 @@ const NavBar = (props) => {
         <>
             <AppBar position="static">
                 <Toolbar className={classes.header}>
-                    <Typography className={classes.title}>
+                    <Typography>
                         Exchange App
                     </Typography>
                 </Toolbar>
