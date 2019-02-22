@@ -17,4 +17,4 @@ and you can run this apps
 ```sh
 $ docker-compose up
 ```
-
+open in browser http://localhost:5000
