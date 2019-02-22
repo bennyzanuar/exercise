@@ -4,7 +4,16 @@
   "description": "exercise app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:server": "nodemon --watch build --exec babel-node build/bundle.js",
+    "dev:build-server": "webpack --mode development --config webpack.server.js --watch",
+    "dev:build-client": "webpack --mode development --config webpack.client.js --watch",
+    "prod": "npm run prod:build-server && npm run prod:build-client && npm run prod:server",
+    "prod:server": "pm2-runtime build/bundle.js",
+    "prod:build-server": "webpack --mode production --config webpack.server.js",
+    "prod:build-client": "webpack --mode production --config webpack.client.js",
+    "test": "jest",
+    "test:watch": "npm test -- --watchAll"
   },
   "repository": {
     "type": "git",
