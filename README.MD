@@ -12,7 +12,8 @@ In this application I divide into 3 components
 NPM 6.4.1\
 Node v10.15.0\
 just clone this repo\
-and you can run this apps
+go to your folder clone\
+and run it from terminal
 
 ```sh
 $ docker-compose up
